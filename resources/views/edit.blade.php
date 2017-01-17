@@ -1,8 +1,5 @@
 @extends('layouts.app')
-@section('styles')
-@parent
-<link rel="stylesheet" href="{{asset('media/css/index.css')}}"/>
-@stop
+
 @section('content')
 <div class="container">
     <div class="row">
