@@ -36,18 +36,18 @@
 <body>
 
     <script>
-		  function getCookie(name) {
-  var regexp = new RegExp("(?:^" + name + "|;\s*"+ name + ")=(.*?)(?:;|$)", "g");
-  var result = regexp.exec(document.cookie);
-  return (result === null) ? null : result[1];
-}
+		function getCookie(name) {
+		  var regexp = new RegExp("(?:^" + name + "|;\s*"+ name + ")=(.*?)(?:;|$)", "g");
+		  var result = regexp.exec(document.cookie);
+		  return (result === null) ? null : result[1];
+		}
 
-  if(getCookie("cookie_bg") === "bg1" || getCookie("cookie_bg") === null) {  
-document.body.style.backgroundImage = "url('media/img/1.jpg')";
-  };  
-  if(getCookie("cookie_bg") === "bg2") {  
-document.body.style.backgroundImage = 'url(media/img/bg.jpg)';
-  };  
+		  if(getCookie("cookie_bg") === "bg1" || getCookie("cookie_bg") === null) {  
+		document.body.style.backgroundImage = "url('media/img/1.jpg')";
+		  };  
+		  if(getCookie("cookie_bg") === "bg2") {  
+		document.body.style.backgroundImage = 'url(media/img/bg.jpg)';
+		  };  
     </script>
 	
 	<div class="fix_bg_change" title="Выбор фона">  
@@ -134,36 +134,36 @@ document.body.style.backgroundImage = 'url(media/img/bg.jpg)';
     <script src="/js/app.js"></script>
 	
 	
-	    <script>
-$('.bg_set1').click(function() {  
- document.cookie = "cookie_bg=bg1";  
-  $('body').css('background-image', 'url("media/img/1.jpg")');  
-  $('.bg_set1').css('border', '2px solid #3cce3a');   
-  $('.bg_set2').css('border', '2px solid #fff');   
-  });  
-  $('.bg_set2').click(function() {  
-	document.cookie = "cookie_bg=bg2";
-  $('body').css('background-image', 'url("media/img/bg.jpg")'); 
-  $('.bg_set2').css('border', '2px solid #3cce3a');   
-  $('.bg_set1').css('border', '2px solid #fff');    
-  }); 
-  
-  
-    if(getCookie("cookie_bg") === "bg1" || getCookie("cookie_bg") === null) {  
-	
-  $('.bg_set1').css('border', '2px solid #3cce3a');   
-  $('.bg_set2').css('border', '2px solid #fff');   
-  };  
-  if(getCookie("cookie_bg") === "bg2") {  
-  $('.bg_set2').css('border', '2px solid #3cce3a');   
-  $('.bg_set1').css('border', '2px solid #fff');  
-  }; 
-  
-  
-  $('.ads').click(function(){
-	  $('.ads').css('display', 'none');  
-  });
-  
+	<script>
+		$('.bg_set1').click(function() {  
+		 document.cookie = "cookie_bg=bg1";  
+		  $('body').css('background-image', 'url("media/img/1.jpg")');  
+		  $('.bg_set1').css('border', '2px solid #3cce3a');   
+		  $('.bg_set2').css('border', '2px solid #fff');   
+		  });  
+		  $('.bg_set2').click(function() {  
+			document.cookie = "cookie_bg=bg2";
+		  $('body').css('background-image', 'url("media/img/bg.jpg")'); 
+		  $('.bg_set2').css('border', '2px solid #3cce3a');   
+		  $('.bg_set1').css('border', '2px solid #fff');    
+		  }); 
+		  
+		  
+			if(getCookie("cookie_bg") === "bg1" || getCookie("cookie_bg") === null) {  
+			
+		  $('.bg_set1').css('border', '2px solid #3cce3a');   
+		  $('.bg_set2').css('border', '2px solid #fff');   
+		  };  
+		  if(getCookie("cookie_bg") === "bg2") {  
+		  $('.bg_set2').css('border', '2px solid #3cce3a');   
+		  $('.bg_set1').css('border', '2px solid #fff');  
+		  }; 
+		  
+		  
+		  $('.ads').click(function(){
+			  $('.ads').css('display', 'none');  
+		  });
+		  
     </script>
 	
 	
