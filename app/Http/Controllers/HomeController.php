@@ -55,7 +55,7 @@ class HomeController extends Controller
 	return view('edit')->with('one',$one);
 	//echo $id;
 	}
-	public function postEdit(GoodRequest $r, $id)
+	public function postEdit(Requests\GoodRequest $r, $id)
 	{
 	$f=\App::make('App\Libs\Imag')->url($_FILES['picture1']['tmp_name'],'/media/photos/');
         $r['user_id']=Auth::user()->id;

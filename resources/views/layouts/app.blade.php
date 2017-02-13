@@ -43,16 +43,16 @@
 		}
 
 		  if(getCookie("cookie_bg") === "bg1" || getCookie("cookie_bg") === null) {  
-		document.body.style.backgroundImage = "url('media/img/1.jpg')";
+		document.body.style.backgroundImage = "url('../../media/img/1.jpg')";
 		  };  
 		  if(getCookie("cookie_bg") === "bg2") {  
-		document.body.style.backgroundImage = 'url(media/img/bg.jpg)';
+		document.body.style.backgroundImage = 'url(../../media/img/bg.jpg)';
 		  };  
     </script>
 	
 	<div class="fix_bg_change" title="Выбор фона">  
-  <img class="bg_set1" src="media/img/1.jpg" width="40px"> 
-  <img class="bg_set2" src="media/img/bg.jpg" width="40px"> 
+  <img class="bg_set1" src="../../media/img/1.jpg" width="40px"> 
+  <img class="bg_set2" src="../../media/img/bg.jpg" width="40px"> 
   </div> 
   
 
@@ -137,13 +137,13 @@
 	<script>
 		$('.bg_set1').click(function() {  
 		 document.cookie = "cookie_bg=bg1";  
-		  $('body').css('background-image', 'url("media/img/1.jpg")');  
+		  $('body').css('background-image', 'url("../../media/img/1.jpg")');  
 		  $('.bg_set1').css('border', '2px solid #3cce3a');   
 		  $('.bg_set2').css('border', '2px solid #fff');   
 		  });  
 		  $('.bg_set2').click(function() {  
 			document.cookie = "cookie_bg=bg2";
-		  $('body').css('background-image', 'url("media/img/bg.jpg")'); 
+		  $('body').css('background-image', 'url("../../media/img/bg.jpg")'); 
 		  $('.bg_set2').css('border', '2px solid #3cce3a');   
 		  $('.bg_set1').css('border', '2px solid #fff');    
 		  }); 

@@ -1,51 +1,51 @@
 @extends('layouts.app')
-
+@section('styles')
 @section('content')
 <div class="container">
     <div class="row">
         <div class="col-md-8 col-md-offset-2">
             <div class="panel panel-default">
-                <div class="panel-heading">Форма редактирования товара</div>
+                <div class="panel-heading">Р¤РѕСЂРјР° СЂРµРґР°РєС‚РёСЂРѕРІР°РЅРёСЏ С‚РѕРІР°СЂР°</div>
 
                 <div class="panel-body">
 				<form method='POST' action='home' enctype='multipart/form-data'>
 					{{csrf_field()}}
 						  <div class="form-group">
-							<label for="exampleInputName1">Название</label>
-							<input type="text" class="form-control" id="exampleInputName1" name="name" placeholder="Введите название товара">
+							<label for="exampleInputName1">РќР°Р·РІР°РЅРёРµ</label>
+							<input type="text" class="form-control" id="exampleInputName1" name="name" placeholder="Р’РІРµРґРёС‚Рµ РЅР°Р·РІР°РЅРёРµ С‚РѕРІР°СЂР°">
 						  </div>
 						  <div class="form-group">
-							  <label for="exampleInputCost1">Стоимость</label>
+							  <label for="exampleInputCost1">РЎС‚РѕРёРјРѕСЃС‚СЊ</label>
 								<div class="input-group">
-								  <input type="text" class="form-control" id="exampleInputCost" name="cost" placeholder="Введите стоимость товара">
+								  <input type="text" class="form-control" id="exampleInputCost" name="cost" placeholder="Р’РІРµРґРёС‚Рµ СЃС‚РѕРёРјРѕСЃС‚СЊ С‚РѕРІР°СЂР°">
 								  <div class="input-group-addon">$</div>
 								</div>
 						  </div>
 						  <div class="form-group">
-							<label for="exampleInputPassword1">Описание</label>
+							<label for="exampleInputPassword1">РћРїРёСЃР°РЅРёРµ</label>
 							<textarea class="form-control" name="description" rows="3"></textarea>
 						  </div>
 						  <div class="form-group">
-						    <label for="category">Категория</label>
+						    <label for="category">РљР°С‚РµРіРѕСЂРёСЏ</label>
 							<select class="form-control" name="category">
-							  <option value=1>Верхняя одежда</option>
-							  <option value=2>Нижняя одежда</option>
-							  <option value=3>Платья</option>
-							  <option value=4>Аксессуары</option>
-							  <option value=5>Головные уборы</option>
+							  <option value=1>Р’РµСЂС…РЅСЏСЏ РѕРґРµР¶РґР°</option>
+							  <option value=2>РќРёР¶РЅСЏСЏ РѕРґРµР¶РґР°</option>
+							  <option value=3>РџР»Р°С‚СЊСЏ</option>
+							  <option value=4>РђРєСЃРµСЃСЃСѓР°СЂС‹</option>
+							  <option value=5>Р“РѕР»РѕРІРЅС‹Рµ СѓР±РѕСЂС‹</option>
 							</select>
 						  </div>
 						  <div class="form-group">
-							<label for="exampleInputFile">Выберите файл</label>
+							<label for="exampleInputFile">Р’С‹Р±РµСЂРёС‚Рµ С„Р°Р№Р»</label>
 							<input type="file" name="picture1" id="exampleInputFile">
 						  </div>
 						  <div class="checkbox">
 							<label>
-								<input type="checkbox" name="checkbox" id="checkbox">Показывать товар
+								<input type="checkbox" name="checkbox" id="checkbox">РџРѕРєР°Р·С‹РІР°С‚СЊ С‚РѕРІР°СЂ
 							</label>
 						  </div>
 
-					<button type="submit" class="btn btn-default btn-block">Cохранить изменения</button>
+					<button type="submit" class="btn btn-default btn-block">CРѕС…СЂР°РЅРёС‚СЊ РёР·РјРµРЅРµРЅРёСЏ</button>
 					</form>
 				</div>
             </div>
