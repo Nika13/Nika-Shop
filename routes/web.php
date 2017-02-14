@@ -19,6 +19,8 @@ Route::get('/', 'BaseController@getindex');
 Route::get('/home/delete/{id}', 'HomeController@getDelete');
 Route::get('/home/edit/{id}', 'HomeController@getEdit');
 Route::post('/home/edit/{id}', 'HomeController@postEdit');
+Route::get('order/cart', 'OrderController@getCart');
+Route::get('order/{id}', 'OrderController@getIndex');
 // всегда в конце файла
 // default route
 Route::get('/{id}', 'BaseController@getStatic');
