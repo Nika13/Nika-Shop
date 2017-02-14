@@ -1,5 +1,26 @@
 # Laravel PHP Framework
+# Nika'Shop
 
+## Обратная связь
+   По всем вопросам можно обращаться по адресу Nika.Lutak.13@mail.ru
+   
+## В проекте использованы следующие технологии:
+      "php": ">=5.6.4",
+      "laravel/framework": "5.3.*",
+      "intervention/image": "^2.3"
+
+## Установка
+## Сделайте следующие действия: 
+   - cd domains
+   - клонировать проект git clone https://github.com/.../...git
+   - открыть консоль OpenServer cd /laravel
+   - composer install
+   - создать MySQL-базу с именем Laravel
+   - создать .env по примеру .env .example
+   - в цикле подключиться к базе Laravel
+   - php artisan migrate (выполнение миграции)
+   - php artidan db:seed
+   
 [![Build Status](https://travis-ci.org/laravel/framework.svg)](https://travis-ci.org/laravel/framework)
 [![Total Downloads](https://poser.pugx.org/laravel/framework/d/total.svg)](https://packagist.org/packages/laravel/framework)
 [![Latest Stable Version](https://poser.pugx.org/laravel/framework/v/stable.svg)](https://packagist.org/packages/laravel/framework)
@@ -22,6 +43,3 @@ Thank you for considering contributing to the Laravel framework! The contributio
 
 If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell at taylor@laravel.com. All security vulnerabilities will be promptly addressed.
 
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT).
