@@ -1,6 +1,3 @@
-<!-- НАУЧИТЕСЬ ЗАКРЫВАТЬ ТЕГИ!!!! -->
-
-
 @extends('layouts.app')
 @section('styles')
 @parent
@@ -17,7 +14,7 @@
 				<center> <h2>Список товаров</h2> </center>
 				
 					@foreach($all as $one)
-						<div  class="goods_items" >
+						<div  class="goods_items" > 
 						<h3  class="name" >{{$one->name}}</h3>
 					
 					<div class="img_d">	
@@ -33,7 +30,10 @@
 						</div>
 						
 							<div class="cost" >{{$one->cost}} $</div>
+							<a href="{{asset('/order/'.$one->id)}}" class='btn btn-block btn-success order'>Добавить в корзину</a>
 						</div>
+						
+						
 					@endforeach
 					
                 </div>
